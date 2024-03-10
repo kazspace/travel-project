@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(
+    102.2deg,
+    rgb(250, 45, 66) 9.6%,
+    rgb(245, 104, 104) 96.1%
+  );
+  font-family: "Urbanist", sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  background: rgb(255, 255, 255, 0.6);
+  border-radius: 5px;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  margin: 0;
+}
+
+h2 {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #df0e62;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 5px black;
+  display: block;
+  margin: 0 auto;
+
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background-color: #df0e62;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:active {
+  margin-top: 5px;
+  color: black;
+  box-shadow: 0px 0px;
+}
+
+.image-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.main-image {
+  transition: all 150ms ease-in-out;
+}
+.main-image:hover {
+  transform: scale(1.2);
+  filter: contrast(45%);
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.image-gallery {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.image-gallery img {
+  width: 100%;
+  transition: all 150ms ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(2);
+  border: 1px solid black;
+}
+
+.dark {
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 32.4%,
+    rgb(137, 30, 47) 98.8%
+  );
+  color: white;
+}
+
+.dark .container {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark a {
+  color: plum;
+}
+
+.dark .image-gallery img:hover {
+  border: 2px solid rgb(137, 30, 47);
+  filter: grayscale(65%);
+}
+
+.dark button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 5px #df0e62;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  transition: all 150ms ease-in-out;
+}
+
+.dark button:hover {
+  background-color: #fb90b7;
+  cursor: pointer;
+  color: #000;
+}
+
+.dark button:active {
+  margin-top: 5px;
+  color: black;
+  box-shadow: 0px 0px;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+  background: rgb(255, 255, 255, 0.6);
+  padding: 12px 30px;
+  border-radius: 4px;
+}
+
+.dark footer {
+  background: rgba(0, 0, 0, 0.2);
+}
